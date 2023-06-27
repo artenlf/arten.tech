@@ -37,3 +37,6 @@ yarn-error.log*
 next-env.d.ts
 
 .contentlayer
+
+# Example files
+content-not-being-used

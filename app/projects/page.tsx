@@ -21,10 +21,10 @@ export default async function ProjectsPage() {
 	}, {} as Record<string, number>);
 
 	const featured = allProjects.find(
-		(project) => project.slug === "planetfall",
+		(project) => project.slug === "ignite-call",
 	)!;
-	const top2 = allProjects.find((project) => project.slug === "highstorm")!;
-	const top3 = allProjects.find((project) => project.slug === "envshare")!;
+	const top2 = allProjects.find((project) => project.slug === "ignite-call")!;
+	const top3 = allProjects.find((project) => project.slug === "ignite-call")!;
 	const sorted = allProjects
 		.filter((p) => p.published)
 		.filter(
