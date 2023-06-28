@@ -6,24 +6,24 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
 	title: {
-		default: "artendev.com",
-		template: "%s | artendev.com",
+		default: "arten.tech",
+		template: "%s | arten.tech",
 	},
 	description: "Front-End Developer",
 	openGraph: {
-		title: "artendev.com",
+		title: "arten.tech",
 		description:
 			"ToDo: description",
-		url: "https://artendev.com",
-		siteName: "artendev.com",
+		url: "https://arten.tech",
+		siteName: "arten.tech",
 		images: [
 			{
-				url: "https://artendev.com/og.png",
+				url: "https://arten.tech/og.png",
 				width: 1920,
 				height: 1080,
 			},
 		],
-		locale: "en-US",
+		locale: "pt-BR",
 		type: "website",
 	},
 	robots: {
