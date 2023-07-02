@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { Card } from "../components/card";
 import { Navigation } from "../components/nav";
 import Image from "next/image";
@@ -33,27 +34,38 @@ export default function Example() {
 			<Navigation />
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
 
-				<div className=" w-[50vw] gap-8 mx-auto mt-32 sm:mt-0 lg:gap-16">
+				<div className="w-[50vw]">
 						<Card>
-							<div className="h-[80vh] flex flex-col flex-1 p-8 justify-center items-center lg:p-4">
+							<div className="h-[80vh] flex flex-col flex-1 p-4 justify-center items-center lg:p-2">
 			<h1 
 			className="text-xl font-medium duration-150 p-2 lg:text-3xl text-zinc-400 
-			group-hover:text-white font-display xl:pb-8">
+			group-hover:text-white font-display xl:pb-4">
 				Sobre
 				</h1>
+				
 				{about.map((a) => (
 				<div className="max-w-xl text-justify">
 					<p className="duration-150 lg:text-xl text-zinc-300 
 			group-hover:text-white sm:text-sm">
 				{a.description}
 				</p>
-				<div className="grid grid-cols-8 grid-rows-2 gap-4 py-8 lg:py-4">
+				<div className="text-center p-4">
+					<Link
+								href="https://github.com/artenlf/arten.tech/raw/main/public/CV.pdf"
+								target="_blank"
+								className="text-xl font-medium duration-150 font-display lg:text-2xl text-zinc-400 
+								hover:text-blue-400  hover:underline"
+							>Download CV
+							</Link>
+							</div>
+				<div className="grid grid-cols-8 grid-rows-2 gap-x-8 gap-y-4 py-4">
 				{a.technologies.map((t) => (
-					<Image className="mx-2 lg:p-1 hover:scale-125" alt={t} width={40} height={40} src={t} />
+					<Image className="mx-2 hover:scale-125" alt={t} width={40} height={40} src={t} />
 				))}
 				</div>
 				</div>
 				))}
+				
 			</div>
 						</Card>
 				</div>
