@@ -10,6 +10,13 @@ module.exports = {
 
 	theme: {
 		extend: {
+			screens: {
+				"xs": "348px",
+				...defaultTheme.screens
+			},
+			debugScreens: {
+				ignore: ['xs'],
+			},
 			typography: {
 				DEFAULT: {
 					css: {

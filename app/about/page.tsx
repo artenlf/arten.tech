@@ -34,9 +34,9 @@ export default function Example() {
 			<Navigation />
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
 
-				<div className="w-[50vw]">
+				<div className="w-[75vw] xl:w-[50vw]">
 						<Card>
-							<div className="h-[80vh] flex flex-col flex-1 p-4 justify-center items-center lg:p-2">
+							<div className="h-[80vh] flex flex-col flex-1 p-4 justify-center items-center sm:p-8 lg:p-2">
 			<h1 
 			className="text-xl font-medium duration-150 p-2 lg:text-3xl text-zinc-400 
 			group-hover:text-white font-display xl:pb-4">
@@ -45,8 +45,8 @@ export default function Example() {
 				
 				{about.map((a) => (
 				<div className="max-w-xl text-justify">
-					<p className="duration-150 lg:text-xl text-zinc-300 
-			group-hover:text-white sm:text-sm">
+					<p className="text-xs duration-150  text-zinc-300 
+			group-hover:text-white sm:text-base lg:text-lg xl:text-xl">
 				{a.description}
 				</p>
 				<div className="text-center p-4">
@@ -58,9 +58,9 @@ export default function Example() {
 							>Download CV
 							</Link>
 							</div>
-				<div className="grid grid-cols-8 grid-rows-2 gap-x-8 gap-y-4 py-4">
+				<div className="grid grid-cols-4 gap-x-8 gap-y-4 py-4 sm:grid-cols-8">
 				{a.technologies.map((t) => (
-					<Image className="mx-2 hover:scale-125" alt={t} width={40} height={40} src={t} />
+					<Image className="w-6 h-6 mx-2 hover:scale-125 sm:w-10 sm:h-10" alt={t} width={40} height={40} src={t} />
 				))}
 				</div>
 				</div>
