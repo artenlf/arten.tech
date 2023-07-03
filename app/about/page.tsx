@@ -34,9 +34,9 @@ export default function Example() {
 			<Navigation />
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
 
-				<div className="w-[75vw] xl:w-[50vw]">
+				<div className="w-[75vw] xl:w-[50vw] mt-12 sm:mt-0">
 						<Card>
-							<div className="h-[80vh] flex flex-col flex-1 p-4 justify-center items-center sm:p-8 lg:p-2">
+							<div className="h-[85vh] flex flex-col flex-1 p-4 justify-center items-center sm:h-[80vh] lg:p-2">
 			<h1 
 			className="text-xl font-medium duration-150 p-2 lg:text-3xl text-zinc-400 
 			group-hover:text-white font-display xl:pb-4">
@@ -49,18 +49,18 @@ export default function Example() {
 			group-hover:text-white sm:text-base lg:text-lg xl:text-xl">
 				{a.description}
 				</p>
-				<div className="text-center p-4">
+				<div className="text-center py-2 sm:py-4">
 					<Link
 								href="https://github.com/artenlf/arten.tech/raw/main/public/CV.pdf"
 								target="_blank"
-								className="text-xl font-medium duration-150 font-display lg:text-2xl text-zinc-400 
-								hover:text-blue-400  hover:underline"
+								className="text-lg font-medium duration-150 font-display lg:text-2xl text-zinc-400 
+								hover:text-blue-400 hover:underline"
 							>Download CV
 							</Link>
 							</div>
-				<div className="grid grid-cols-4 gap-x-8 gap-y-4 py-4 sm:grid-cols-8">
+				<div className="grid grid-cols-8 gap-1 sm:gap-x-8 sm:gap-y-4 sm:py-4 sm:grid-cols-8">
 				{a.technologies.map((t) => (
-					<Image className="w-6 h-6 mx-2 hover:scale-125 sm:w-10 sm:h-10" alt={t} width={40} height={40} src={t} />
+					<Image className="w-6 h-6 hover:scale-125 sm:w-10 sm:h-10" alt={t} width={40} height={40} src={t} />
 				))}
 				</div>
 				</div>
