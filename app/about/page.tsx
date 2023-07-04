@@ -51,7 +51,7 @@ export default function Example() {
 				</p>
 				<div className="text-center py-2 sm:py-4">
 					<Link
-								href="https://github.com/artenlf/arten.tech/raw/main/public/CV.pdf"
+								href="https://github.com/artenlf/arten.tech/raw/main/public/Luis-Felipe-Arten-CV.pdf"
 								target="_blank"
 								className="text-lg font-medium duration-150 font-display lg:text-2xl text-zinc-400 
 								hover:text-blue-400 hover:underline"
