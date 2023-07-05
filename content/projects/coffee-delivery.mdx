@@ -1,0 +1,45 @@
+---
+title: Coffee Delivery
+description: Aplicação de e-commerce desenvolvida em React.js.
+date: "2022-12-31"
+url: https://coffee-delivery-artenlf.vercel.app/
+published: true
+repository: "artenlf/coffee-delivery"
+
+---
+
+O Coffee Delivery é uma aplicação simples de e-commerce, em que é possível adicionar cafés ao carrinho e fazer
+checkout para delivery. No campo de endereço, é possível inserir um CEP e através da API CEP Promise, os demais
+campos serão automaticamente preenchidos.
+
+## Sobre o projeto
+
+Este projeto foi um dos requisitos para conclusão do segundo módulo na trilha React do Ignite Rocketseat. 
+Os objetivos foram: realizar um CRUD (CREATE-READ-UPDATE-DELETE) integrando a um carrinho de compras, essencial
+em toda aplicação e-commerce. Também foi uma maneira de praticar utilização de hooks do React (useState, useEffect),
+aprofundar conceitos como da imutabilidade, métodos de Array e uso de local storage. Dentre as outras tecnologias
+utilizadas no projeto estão: Vite, styled-components, React-Hook-Form e integração com uma API externa (CEP Promise).
+
+## Features
+
+- **CRUD:** É possível colocar itens no carrinho, atualizar as quantidades e remover itens
+- **Auto-preenchimento com CEP Promise:** Utilizando a API externa, o usuário digita um CEP e os demais campos
+são preenchidos automaticamente
+- **Persistência de dados via Local Storage:** os itens colocados em um carrinho ficam armazenados na sessão do usuário
+utilizando o local storage. Os itens de um carrinho só serão removidos dentro da aplicação, ou resetando os dados do navegador
+
+
+![](https://github.com/artenlf/coffee-delivery/raw/main/public/screenshots/1.png)
+![](https://github.com/artenlf/coffee-delivery/raw/main/public/screenshots/2.png)
+![](https://github.com/artenlf/coffee-delivery/raw/main/public/screenshots/3.png)
+![](https://github.com/artenlf/coffee-delivery/raw/main/public/screenshots/4.png)
+![](https://github.com/artenlf/coffee-delivery/raw/main/public/screenshots/5.png)
+
+
+## Desenvolvida com
+
+- [React.js](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [BrasilAPI CEP Promise](https://github.com/BrasilAPI/cep-promise)
+- [Styled-Components](https://styled-components.com/)
+- Deployed on [Vercel](https://vercel.com?utm_source=coffee-delivery)

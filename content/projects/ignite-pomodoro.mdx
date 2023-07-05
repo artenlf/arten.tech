@@ -1,0 +1,42 @@
+---
+title: Pomodoro App
+description: Aplicação de método Pomodoro desenvolvida em React.js.
+date: "2022-11-16"
+url: https://ignite-pomodoro-app.vercel.app/
+published: true
+repository: "artenlf/ignite-pomodoro-app"
+
+---
+
+Aplicação de timer estilo Pomodoro, em que os usuários podem programar contagens regressivas, pausar e resetar conforme preferirem.
+
+## Sobre o projeto
+
+Este projeto foi um dos requisitos para conclusão do segundo módulo na trilha React do Ignite Rocketseat. 
+Os objetivos foram: praticar os fundamentos do React e utilização de hooks como useContext, useState, 
+useReducer, Providers e Routes. Também aprofundei conhecimentos sobre imutabilidade. Utilizei o Vite como 
+ferramenta de build do projeto, junto com TypeScript e Styled-Components. A UI do projeto foi baseada em 
+um protótipo do Figma.
+
+## Features
+
+- **Crie uma tarefa e programe o tempo:** o timer tem um tempo mínimo de 1 minuto e uma vez iniciado, pode ser parado
+- **Histórico de timer na sessão:** há uma página para armazenamento do histórico do usuário, demonstrando as tarefas em progresso,
+ concluídas, ou paradas pelo usuário
+ **Regras:** 
+- Enquanto o cronômetro está ativo (contagem regressiva), uma tarefa é definida como status "em andamento".
+- Sempre que os usuários pararem o cronômetro, o status da tarefa será definido como "interrompido".
+- Sempre que o relógio chegar a zero, o status da tarefa será definido como "concluído".
+
+
+![](https://github.com/artenlf/ignite-pomodoro-app/raw/main/public/screenshots/1.png)
+![](https://github.com/artenlf/ignite-pomodoro-app/raw/main/public/screenshots/2.png)
+![](https://github.com/artenlf/ignite-pomodoro-app/raw/main/public/screenshots/3.png)
+
+
+## Desenvolvida com
+
+- [React.js](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Styled-Components](https://styled-components.com/)
+- Deployed on [Vercel](https://vercel.com?utm_source=coffee-delivery)
