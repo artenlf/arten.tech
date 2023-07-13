@@ -1,12 +1,18 @@
 "use client";
-import Link from "next/link";
-import { Card } from "../components/card";
-import { Navigation } from "../components/nav";
 import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import { Navigation } from "../components/nav";
 
 const about = [
 	{
-		description: "Sou Desenvolvedor de Software Júnior ávido por novos conhecimentos, desafios e por aprimorar das minhas habilidades, buscando contribuir para o desenvolvimento e manutenção de produtos. No último ano, tenho trabalhado principalmente com React.js e tecnologias correlatas como TypeScript e Next.js, focando em construir interfaces de usuário funcionais, com bom desempenho, arquitetura limpa e melhores práticas de código. Desenvolvi projetos que integram APIs como a da GitHub, da Google e checkout de carrinho de compras da Stripe. Além disso, nos últimos meses, venho desenvolvendo alguns projetos Full-Stack utilizando tecnologias como Node.js, Prisma ORM e bancos de dados relacionais, incluindo MySQL e PostgreSQL. Por fim, sou uma pessoa proativa, colaborativa e consciente de si, buscando colocação onde possa para aplicar o conhecimento que adquiri, construir novas soluções e resolver problemas.",
+		description: `Meu nome é Luís Felipe, tenho 33 anos. Sou Desenvolvedor de Software vindo de um transição de carreira das Ciências Contábeis. Em 2014, tive meu primeiro contato com desenvolvimento: fiz alguns jogos na simples em Unity e depois um curso de Java. Em 2015, cheguei a iniciar a faculdade de Análise de Sistemas, mas parei o curso para poder me dedicar a cuidar do escritório de contabilidade de minha família. Em 2020, retomei meus estudos em programação e, em 2022, dei início a carreira como dev. 
+		
+		Sou introvertido, mas a minha curiosidade é maior e converso com muita gente para aprender coisas novas, trocar culturalmente e evoluir. As pessoas mais íntimas me acham muito solícito, atento leal e prestativo, e apesar de achar que todos deveria ser assim, sei que contam como minhas qualidades. 
+		
+		Adoro esportes e filosofia. Sou gamer, de vez em quando. Sou pai de 4 gatos, 3 frajolas: Michael Jordan, Bruce Wayne e Panda Maria; e 1 Amarela: Sucrilhas. E sou da gangue do Hamburger com batata fritas. 
+
+		Se você quiser saber mais sobre minha vida profissional, fique a vontade para fazer download do meu currículo abaixo.`,
 		technologies:[
 			"https://github.com/devicons/devicon/raw/master/icons/react/react-original-wordmark.svg",
 			"https://github.com/devicons/devicon/raw/master/icons/typescript/typescript-original.svg",
@@ -32,23 +38,26 @@ export default function Example() {
 	return (
 		<div className=" bg-gradient-to-tl from-slate-900/40 via-purple-600/25 to-slate-900/40">
 			<Navigation />
-			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
+			<div className="container flex items-center justify-center min-h-screen p-4 mx-auto">
 
-				<div className="w-[75vw] xl:w-[50vw] mt-12 sm:mt-0">
-						<Card>
-							<div className="h-[85vh] flex flex-col flex-1 p-4 justify-center items-center sm:h-[80vh] lg:p-2">
+				<div className="pt-16 pb-2 flex flex-col items-center">
 			<h1 
-			className="text-xl font-medium duration-150 p-2 lg:text-3xl text-zinc-400 
-			group-hover:text-white font-display xl:pb-4">
+			className="text-xl font-medium duration-150 pb-2 lg:text-3xl text-zinc-400 
+			group-hover:text-white md:text-3xl font-display xl:pb-4">
 				Sobre
 				</h1>
 				
 				{about.map((a) => (
 				<div className="max-w-xl text-justify">
-					<p className="text-xs duration-150  text-zinc-300 
-			group-hover:text-white sm:text-base lg:text-lg xl:text-xl">
-				{a.description}
-				</p>
+					<p className="text-sm tracking-tighter duration-150  text-zinc-300 
+			group-hover:text-white sm:text-base md:text-lg">
+					{a.description.split('\n').map((line, index) => (
+      <React.Fragment key={index}>
+        {line}
+        <br />	
+      </React.Fragment>
+			))}
+			</p>
 				<div className="text-center py-2 sm:py-4">
 					<Link
 								href="https://github.com/artenlf/arten.tech/raw/main/public/Luis-Felipe-Arten-CV.pdf"
@@ -67,9 +76,8 @@ export default function Example() {
 				))}
 				
 			</div>
-						</Card>
+					
 				</div>
 			</div>
-		</div>
 	);
 }
