@@ -39,9 +39,11 @@ export default function Home() {
 			bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-sm text-zinc-400 ">
-					Olá! Meu nome é Felipe, mas sou conhecido como arten.
+					Olá! Sou o Arten!
 					<br />
-					Sou desenvolvedor Front-End e você pode conferir meus repositórios no {" "}
+					Sou desenvolvedor Front-End.
+					<br />
+					Confira meus repositórios no {" "}
 					<Link
 						target="_blank"
 						href="https://github.com/artenlf"
