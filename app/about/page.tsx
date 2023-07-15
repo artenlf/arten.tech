@@ -6,13 +6,13 @@ import { Navigation } from "../components/nav";
 
 const about = [
 	{
-		description: `Meu nome é Luís Felipe, tenho 33 anos. Sou Desenvolvedor de Software vindo de um transição de carreira das Ciências Contábeis. Em 2014, tive meu primeiro contato com desenvolvimento: fiz alguns jogos na simples em Unity e depois um curso de Java. Em 2015, cheguei a iniciar a faculdade de Análise de Sistemas, mas parei o curso para poder me dedicar a cuidar do escritório de contabilidade de minha família. Em 2020, retomei meus estudos em programação e, em 2022, dei início a carreira como dev. 
+		description: `Meu nome é Luís Felipe, tenho 33 anos. Sou Desenvolvedor de Software vindo de transição de carreira das Ciências Contábeis. Em 2014, tive meu primeiro contato com desenvolvimento: fiz alguns jogos na simples em Unity e depois um curso de Java. Em 2015, cheguei a iniciar a faculdade de Análise de Sistemas, mas parei o curso para poder me dedicar a cuidar do escritório de contabilidade de minha família. Em 2020, retomei meus estudos em programação e, em 2022, dei início a carreira como dev. 
 		
-		Sou introvertido, mas a minha curiosidade é maior e converso com muita gente para aprender coisas novas, trocar culturalmente e evoluir. As pessoas mais íntimas me acham muito solícito, atento leal e prestativo, e apesar de achar que todos deveria ser assim, sei que contam como minhas qualidades. 
+		Gosto conversar e ajudar, sempre que possível, ainda que seja um estranho. Ao longo dos anos aprendi que essas interações são oportunidades incríveis de conhecer outras visões de mundo e culturas. Por isso, se quiser bater um papo, é só me chamar! 😅
 		
-		Adoro esportes e filosofia. Sou gamer, de vez em quando. Sou pai de 4 gatos, 3 frajolas: Michael Jordan, Bruce Wayne e Panda Maria; e 1 Amarela: Sucrilhas. E sou da gangue do Hamburger com batata fritas. 
+		Adoro esportes, games e filosofia. Sou pai de 4 gatos, 3 frajolas: Michael Jordan, Bruce Wayne e Panda Maria; e 1 Amarela: Sucrilhas. E sou da gangue do Hamburger com batata fritas. 
 
-		Se você quiser saber mais sobre minha vida profissional, fique a vontade para fazer download do meu currículo abaixo.`,
+		Mais sobre minha vida profissional no meu currículo abaixo:`,
 		technologies:[
 			"https://github.com/devicons/devicon/raw/master/icons/react/react-original-wordmark.svg",
 			"https://github.com/devicons/devicon/raw/master/icons/typescript/typescript-original.svg",
